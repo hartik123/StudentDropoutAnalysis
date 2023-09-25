@@ -1,0 +1,101 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c1b7eca; /* Background color for the Navbar */
+    padding: 10px 20px;
+    color: #fff; /* Text color for Navbar links and icons */
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #0056b3; /* Color on hover */
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Profile button styles */
+  .profile-button {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .profile-image {
+    width: 30px; /* Adjust the size of the profile image */
+    height: 30px; /* Adjust the size of the profile image */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px;
+  }
+  
+  /* Profile dropdown styles */
+  .profile-dropdown {
+    position: absolute;
+    top: 40px; /* Adjust the distance from the profile button */
+    right: 0;
+    background-color: #fff; /* Background color for the dropdown */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    z-index: 1; /* Ensure it appears above other content */
+    min-width: 160px;
+  }
+  
+  .profile-details {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Add a separator line */
+  }
+  
+  .profile-name {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .profile-options {
+    padding: 10px;
+  }
+  
+  .profile-options a {
+    display: block;
+    text-decoration: none;
+    color: #333; /* Text color for options */
+    padding: 5px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-options a:hover {
+    background-color: #f5f5f5; /* Background color on hover */
+  }
+  
+  /* Media query for responsiveness (adjust as needed) */
+  @media (max-width: 768px) {
+    .navbar a {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      margin-right: 10px;
+    }
+    
+    .profile-button {
+      margin-right: 10px;
+    }
+  }
+  h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+  }
